@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Results</title>
+    <link rel="stylesheet" type="text/css" href="/result_style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="main">
+            <p id="header">Submitted info</p>
+            <ul>
+                <li>
+                    <p class="inline">Name:</p>
+                    <p class="inline"><%= data.name %></p>
+                <li>
+                    <p class="inline">Dojo Location:</p>
+                    <p class="inline"><%= data.location %></p>
+                </li>
+                <li>
+                    <p class="inline">Favorite Language:</p>
+                    <p class="inline"><%= data.language %></p>
+                </li>
+                <li>
+                    <p class="inline" id="type">Comment:</p>
+                    <p class="inline" id="text"><%= data.comment %></p>
+                </li>
+            </ul>
+            <form action="/">
+                <button type="submit" value="goback">Go Back</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
